@@ -1,6 +1,6 @@
 {
   "name": "chauffeur",
-  "version": "0.2.11",
+  "version": "0.2.12",
   "description": "Tool to start up a express server with optional local routes and proxy locations",
   "main": "index.js",
   "scripts": {
