@@ -1,5 +1,5 @@
 var express = require('express'),
-    testable = require('express-testable'),
+    testable = require('testable-middleware'),
     attach = require('./lib/attach');
 
 module.exports = function(data, done) {
@@ -11,11 +11,8 @@ module.exports = function(data, done) {
       proxy = data.proxy || false,
       app = express();
 
-  if (testConf) {
-    app.use(express.static(testable.assetsPath()));
-    testable.attach(app, testConf);
-  }
   if (staticFiles) { attach.staticFiles(app, staticFiles); }
+  if (testConf) { testable.attach(app, testConf); }
   if (routes) { attach.routes(app, routes); }
   if (proxy) { attach.proxy(app, proxy); }
 
