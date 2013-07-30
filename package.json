@@ -1,6 +1,6 @@
 {
   "name": "chauffeur",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Tool to start up a express server with optional local routes and proxy locations",
   "main": "index.js",
   "scripts": {
@@ -16,7 +16,7 @@
     "url": "https://github.com/joeytrapp/node-chauffeur/issues"
   },
   "dependencies": {
-    "testable-middleware": "~0.3.0",
+    "testable-middleware": "~0.3.2",
     "express": "~3.3.4",
     "http-proxy": "~0.10.3"
   }
